@@ -30,10 +30,6 @@ Um sistema moderno baseado em personagens interativos, desenvolvido com React, T
     <td>Navegação entre páginas.</td>
   </tr>
   <tr>
-    <td>WebAuthn</td>
-    <td>Autenticação fácil e segura.</td>
-  </tr>
-  <tr>
     <td>Styled-components</td>
     <td>Estilização dinâmica.</td>
   </tr>
