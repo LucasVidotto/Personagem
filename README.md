@@ -1,54 +1,110 @@
-# React + TypeScript + Vite
+# Personagem
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um sistema moderno baseado em personagens interativos, desenvolvido com React, TypeScript e Vite.
 
-Currently, two official plugins are available:
+## ✨ Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<table>
+  <tr>
+    <th>Tecnologia</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>React 19</td>
+    <td>Biblioteca para interfaces de usuário.</td>
+  </tr>
+  <tr>
+    <td>TypeScript</td>
+    <td>Tipagem estática para maior segurança.</td>
+  </tr>
+  <tr>
+    <td>Vite</td>
+    <td>Ferramenta rápida para desenvolvimento e build.</td>
+  </tr>
+  <tr>
+    <td>Redux Toolkit</td>
+    <td>Gerenciamento eficiente de estado global.</td>
+  </tr>
+  <tr>
+    <td>React Router DOM</td>
+    <td>Navegação entre páginas.</td>
+  </tr>
+  <tr>
+    <td>WebAuthn</td>
+    <td>Autenticação fácil e segura.</td>
+  </tr>
+  <tr>
+    <td>Styled-components</td>
+    <td>Estilização dinâmica.</td>
+  </tr>
+  <tr>
+    <td>Axios</td>
+    <td>Requisições HTTP simplificadas.</td>
+  </tr>
+</table>
 
-## Expanding the ESLint configuration
+## 🛠️ Como Executar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Clone o repositório:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/LucasVidotto/Personagem.git
+cd Personagem
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Acesse em: [`http://localhost:5173`](http://localhost:5173)
+
+## 📊 Estrutura do Projeto
+
+```bash
+Personagem/
+├── src/
+│   ├── components/      # Componentes reutilizáveis
+│   ├── pages/           # Páginas do sistema
+│   ├── store/           # Configuração do Redux Toolkit
+│   ├── hooks/           # Hooks personalizados
+│   ├── App.tsx         
+│   └── main.tsx
+├── .eslintrc.cjs
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## 📈 Funcionalidades
+
+- ✅ Sistema de personagens interativos com upgrades progressivos.
+- ✅ Autenticação biométrica com WebAuthn.
+- ✅ Gerenciamento global com Redux Toolkit.
+- ✅ Navegação SPA com React Router DOM.
+- ✅ UI estilizada com styled-components.
+- ✅ Validação de entrada e autenticação segura.
+
+## 🌐 Contribuições
+
+Contribuições são bem-vindas! Para colaborar:
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova **branch** para suas alterações: 
+
+   ```bash
+   git checkout -b feature/minha-feature
+   ```
+
+3. Envie um **pull request** detalhando as mudanças.
+
+## 💎 Licença
+
+Este projeto está licenciado sob a **Licença MIT**.
